@@ -1,0 +1,172 @@
+\hypertarget{classmodAlphaCipher}{}\doxysection{Класс mod\+Alpha\+Cipher}
+\label{classmodAlphaCipher}\index{modAlphaCipher@{modAlphaCipher}}
+
+
+Шифрование методом Табличной перестановки  
+
+
+
+
+{\ttfamily \#include $<$mod\+Alpha\+Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classmodAlphaCipher_a5666ab6641f63ad3184ceb47e65cdb77}{get\+Valid\+Key}} (int \&s)
+\begin{DoxyCompactList}\small\item\em Метод для проверки ключа ~\newline
+Если ключ меньше 0, то он считается неправильным ~\newline
+. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classmodAlphaCipher_a5187792e9f3b4cf0d6d955dce2e510e2}{get\+Valid\+Key\+Text}} (int key, std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Метод для проверки соответствия длинны ключа длинне текста ~\newline
+Длина ключа должна быть меньше длины сообщения ~\newline
+. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmodAlphaCipher_aeb8c0eebf15bf175ef5a1962af272b31}{get\+Valid\+Open\+Text}} (std\+::string \&s)
+\begin{DoxyCompactList}\small\item\em Метод для проверки текста для зашифрования/расшифрования ~\newline
+Все символы не принадлежащие английскому алфавиту удаляются ~\newline
+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}\label{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}} 
+\mbox{\hyperlink{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}{mod\+Alpha\+Cipher}} ()=delete
+\begin{DoxyCompactList}\small\item\em запретим конструктор без параметров \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodAlphaCipher_addf62ad9bee4b4de67ee4e175717feb1}\label{classmodAlphaCipher_addf62ad9bee4b4de67ee4e175717feb1}} 
+\mbox{\hyperlink{classmodAlphaCipher_addf62ad9bee4b4de67ee4e175717feb1}{mod\+Alpha\+Cipher}} (const int \&key, std\+::string)
+\begin{DoxyCompactList}\small\item\em конструктор для установки ключа \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmodAlphaCipher_a31131a8899c3f33fc40d1df316b4c1a1}{encrypt}} (const std\+::string \&user\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Зашифрование \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classmodAlphaCipher_a1007ad1f0657f68809219c38acf1d32a}{decrypt}} (const std\+::string \&user\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Расшифровывание \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodAlphaCipher_ade88b009cf191b122a3d041e01484e9e}\label{classmodAlphaCipher_ade88b009cf191b122a3d041e01484e9e}} 
+int \mbox{\hyperlink{classmodAlphaCipher_ade88b009cf191b122a3d041e01484e9e}{newkey}}
+\begin{DoxyCompactList}\small\item\em ключ для конструктора \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифрование методом Табличной перестановки 
+
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt. \begin{DoxyWarning}{Предупреждения}
+Реализация только для английского языка 
+\end{DoxyWarning}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classmodAlphaCipher_a1007ad1f0657f68809219c38acf1d32a}\label{classmodAlphaCipher_a1007ad1f0657f68809219c38acf1d32a}} 
+\index{modAlphaCipher@{modAlphaCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::string mod\+Alpha\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Расшифровывание 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em user\+\_\+str} & Строка для зашифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованная строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodAlphaCipher_a31131a8899c3f33fc40d1df316b4c1a1}\label{classmodAlphaCipher_a31131a8899c3f33fc40d1df316b4c1a1}} 
+\index{modAlphaCipher@{modAlphaCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::string mod\+Alpha\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{user\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Зашифрование 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em user\+\_\+str} & Строка для зашифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodAlphaCipher_a5666ab6641f63ad3184ceb47e65cdb77}\label{classmodAlphaCipher_a5666ab6641f63ad3184ceb47e65cdb77}} 
+\index{modAlphaCipher@{modAlphaCipher}!getValidKey@{getValidKey}}
+\index{getValidKey@{getValidKey}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{getValidKey()}{getValidKey()}}
+{\footnotesize\ttfamily int mod\+Alpha\+Cipher\+::get\+Valid\+Key (\begin{DoxyParamCaption}\item[{int \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Метод для проверки ключа ~\newline
+Если ключ меньше 0, то он считается неправильным ~\newline
+. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & число типа int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+число типа int 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & ключ меньше 0 \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmodAlphaCipher_a5187792e9f3b4cf0d6d955dce2e510e2}\label{classmodAlphaCipher_a5187792e9f3b4cf0d6d955dce2e510e2}} 
+\index{modAlphaCipher@{modAlphaCipher}!getValidKeyText@{getValidKeyText}}
+\index{getValidKeyText@{getValidKeyText}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{getValidKeyText()}{getValidKeyText()}}
+{\footnotesize\ttfamily int mod\+Alpha\+Cipher\+::get\+Valid\+Key\+Text (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Метод для проверки соответствия длинны ключа длинне текста ~\newline
+Длина ключа должна быть меньше длины сообщения ~\newline
+. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em text} & строка с сообщением типа string \\
+\hline
+\mbox{\texttt{ in}}  & {\em key} & число типа int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+строка типа string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & строка короче ключа \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmodAlphaCipher_aeb8c0eebf15bf175ef5a1962af272b31}\label{classmodAlphaCipher_aeb8c0eebf15bf175ef5a1962af272b31}} 
+\index{modAlphaCipher@{modAlphaCipher}!getValidOpenText@{getValidOpenText}}
+\index{getValidOpenText@{getValidOpenText}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{getValidOpenText()}{getValidOpenText()}}
+{\footnotesize\ttfamily std\+::string mod\+Alpha\+Cipher\+::get\+Valid\+Open\+Text (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Метод для проверки текста для зашифрования/расшифрования ~\newline
+Все символы не принадлежащие английскому алфавиту удаляются ~\newline
+. 
+
+
+\begin{DoxyParams}[1]{Аргументы}
+\mbox{\texttt{ in}}  & {\em s} & строка с сообщением типа string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+строка типа string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}},если} & строка пуста \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{modAlphaCipher_8h}{mod\+Alpha\+Cipher.\+h}}\item 
+mod\+Alpha\+Cipher.\+cpp\end{DoxyCompactItemize}

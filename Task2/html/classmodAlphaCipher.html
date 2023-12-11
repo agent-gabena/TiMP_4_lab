@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>4 labwork: Класс modAlphaCipher</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">4 labwork
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="classmodAlphaCipher-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс modAlphaCipher</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Шифрование методом Табличной перестановки  
+ <a href="classmodAlphaCipher.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="modAlphaCipher_8h_source.html">modAlphaCipher.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a5666ab6641f63ad3184ceb47e65cdb77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodAlphaCipher.html#a5666ab6641f63ad3184ceb47e65cdb77">getValidKey</a> (int &amp;s)</td></tr>
+<tr class="memdesc:a5666ab6641f63ad3184ceb47e65cdb77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для проверки ключа <br  />
+Если ключ меньше 0, то он считается неправильным <br  />
+.  <a href="classmodAlphaCipher.html#a5666ab6641f63ad3184ceb47e65cdb77">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5666ab6641f63ad3184ceb47e65cdb77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5187792e9f3b4cf0d6d955dce2e510e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodAlphaCipher.html#a5187792e9f3b4cf0d6d955dce2e510e2">getValidKeyText</a> (int key, std::string &amp;text)</td></tr>
+<tr class="memdesc:a5187792e9f3b4cf0d6d955dce2e510e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для проверки соответствия длинны ключа длинне текста <br  />
+Длина ключа должна быть меньше длины сообщения <br  />
+.  <a href="classmodAlphaCipher.html#a5187792e9f3b4cf0d6d955dce2e510e2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5187792e9f3b4cf0d6d955dce2e510e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb8c0eebf15bf175ef5a1962af272b31"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodAlphaCipher.html#aeb8c0eebf15bf175ef5a1962af272b31">getValidOpenText</a> (std::string &amp;s)</td></tr>
+<tr class="memdesc:aeb8c0eebf15bf175ef5a1962af272b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для проверки текста для зашифрования/расшифрования <br  />
+Все символы не принадлежащие английскому алфавиту удаляются <br  />
+.  <a href="classmodAlphaCipher.html#aeb8c0eebf15bf175ef5a1962af272b31">Подробнее...</a><br /></td></tr>
+<tr class="separator:aeb8c0eebf15bf175ef5a1962af272b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f0a86c20f5d836f66cb1e640d875e6b"><td class="memItemLeft" align="right" valign="top"><a id="a4f0a86c20f5d836f66cb1e640d875e6b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodAlphaCipher.html#a4f0a86c20f5d836f66cb1e640d875e6b">modAlphaCipher</a> ()=delete</td></tr>
+<tr class="memdesc:a4f0a86c20f5d836f66cb1e640d875e6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">запретим конструктор без параметров <br /></td></tr>
+<tr class="separator:a4f0a86c20f5d836f66cb1e640d875e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf62ad9bee4b4de67ee4e175717feb1"><td class="memItemLeft" align="right" valign="top"><a id="addf62ad9bee4b4de67ee4e175717feb1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodAlphaCipher.html#addf62ad9bee4b4de67ee4e175717feb1">modAlphaCipher</a> (const int &amp;key, std::string)</td></tr>
+<tr class="memdesc:addf62ad9bee4b4de67ee4e175717feb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">конструктор для установки ключа <br /></td></tr>
+<tr class="separator:addf62ad9bee4b4de67ee4e175717feb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31131a8899c3f33fc40d1df316b4c1a1"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodAlphaCipher.html#a31131a8899c3f33fc40d1df316b4c1a1">encrypt</a> (const std::string &amp;user_str)</td></tr>
+<tr class="memdesc:a31131a8899c3f33fc40d1df316b4c1a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Зашифрование  <a href="classmodAlphaCipher.html#a31131a8899c3f33fc40d1df316b4c1a1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a31131a8899c3f33fc40d1df316b4c1a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1007ad1f0657f68809219c38acf1d32a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodAlphaCipher.html#a1007ad1f0657f68809219c38acf1d32a">decrypt</a> (const std::string &amp;user_str)</td></tr>
+<tr class="memdesc:a1007ad1f0657f68809219c38acf1d32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Расшифровывание  <a href="classmodAlphaCipher.html#a1007ad1f0657f68809219c38acf1d32a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1007ad1f0657f68809219c38acf1d32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:ade88b009cf191b122a3d041e01484e9e"><td class="memItemLeft" align="right" valign="top"><a id="ade88b009cf191b122a3d041e01484e9e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmodAlphaCipher.html#ade88b009cf191b122a3d041e01484e9e">newkey</a></td></tr>
+<tr class="memdesc:ade88b009cf191b122a3d041e01484e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ключ для конструктора <br /></td></tr>
+<tr class="separator:ade88b009cf191b122a3d041e01484e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Шифрование методом Табличной перестановки </p>
+<p>Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt. </p><dl class="section warning"><dt>Предупреждения</dt><dd>Реализация только для английского языка </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a1007ad1f0657f68809219c38acf1d32a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1007ad1f0657f68809219c38acf1d32a">&#9670;&nbsp;</a></span>decrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string modAlphaCipher::decrypt </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>user_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Расшифровывание </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_str</td><td>Строка для зашифрования </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Расшифрованная строка </dd></dl>
+
+</div>
+</div>
+<a id="a31131a8899c3f33fc40d1df316b4c1a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31131a8899c3f33fc40d1df316b4c1a1">&#9670;&nbsp;</a></span>encrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string modAlphaCipher::encrypt </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>user_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Зашифрование </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_str</td><td>Строка для зашифрования </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Зашифрованная строка </dd></dl>
+
+</div>
+</div>
+<a id="a5666ab6641f63ad3184ceb47e65cdb77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5666ab6641f63ad3184ceb47e65cdb77">&#9670;&nbsp;</a></span>getValidKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int modAlphaCipher::getValidKey </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод для проверки ключа <br  />
+Если ключ меньше 0, то он считается неправильным <br  />
+. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>число типа int </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>число типа int </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html" title="класс-исключение cipher_error.">cipher_error</a>,если</td><td>ключ меньше 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5187792e9f3b4cf0d6d955dce2e510e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5187792e9f3b4cf0d6d955dce2e510e2">&#9670;&nbsp;</a></span>getValidKeyText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int modAlphaCipher::getValidKeyText </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод для проверки соответствия длинны ключа длинне текста <br  />
+Длина ключа должна быть меньше длины сообщения <br  />
+. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>строка с сообщением типа string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>число типа int </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>строка типа string </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html" title="класс-исключение cipher_error.">cipher_error</a>,если</td><td>строка короче ключа </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeb8c0eebf15bf175ef5a1962af272b31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb8c0eebf15bf175ef5a1962af272b31">&#9670;&nbsp;</a></span>getValidOpenText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string modAlphaCipher::getValidOpenText </td>
+          <td>(</td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод для проверки текста для зашифрования/расшифрования <br  />
+Все символы не принадлежащие английскому алфавиту удаляются <br  />
+. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>строка с сообщением типа string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>строка типа string </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classcipher__error.html" title="класс-исключение cipher_error.">cipher_error</a>,если</td><td>строка пуста </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="modAlphaCipher_8h_source.html">modAlphaCipher.h</a></li>
+<li>modAlphaCipher.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
